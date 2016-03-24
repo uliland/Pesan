@@ -1,0 +1,24 @@
+<div style="background-color:pink; color:black; padding:20px;">
+	<h1>Pesan Baru</h1>
+</div>
+
+<div style="background-color:black; color:white; padding:20px;">
+
+	<%= form_for :pesan, url: pesans_path do |f| %>
+	  <p>
+	    <%= f.label :name %><br>
+	    <%= f.text_field :name %>
+	  </p>
+	 
+	  <p>
+	    <%= f.label :text %><br>
+	    <%= f.text_area :text %>
+	  </p>
+	 
+	  <p>
+	    <%= f.submit %>
+	  </p>
+	<% end %>
+</div>
+
+<%= link_to 'Back', pesans_path %>

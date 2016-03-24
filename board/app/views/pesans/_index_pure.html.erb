@@ -1,0 +1,11 @@
+<div style="background-color:black; color:white; padding:20px;">
+	<table>
+	  <% @pesans.each do |pesan| %>
+	    <tr>
+	      <td style="width:20%"><%= pesan.name %></td>
+	      <td style="width:10%">says:</td>
+	      <td><span style="color:yellow"> <%= pesan.text %> </span></td>
+	    </tr>
+	  <% end %>
+	</table>
+</div>

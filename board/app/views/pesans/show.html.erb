@@ -1,0 +1,16 @@
+<div style="background-color:pink; color:black; padding:20px;">
+	<h1>Pesan Berhasil Ditambahkan</h1>
+</div>
+
+<div style="background-color:black; color:white; padding:20px;">
+	<p>
+	  <strong>Nama:</strong>
+	  <%= @pesan.name %>
+	</p>
+	 
+	<p>
+	  <strong>Text:</strong>
+	  <%= @pesan.text %>
+	</p>
+</div>
+<%= link_to 'Back', pesans_path %>
